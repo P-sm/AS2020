@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Профиль";
+}
+@model HomeViewModel;
+
+    <div class="">
+        <h2 class="">Мой профиль</h2>
+
+
+        @Html.Partial("UserInfoPartial", Model.userInfo)
+        
+    </div>

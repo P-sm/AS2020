@@ -1,0 +1,63 @@
+﻿@model DAL.User
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{}
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">Личные данные</a></li>
+            <li><a href="#tabs-2">Роли</a></li>
+        </ul>
+        <div id="tabs-1">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-5">
+                    <div class="form-group">
+                        <label asp-for="Fam">Фамилия:</label>
+                        @Html.TextBox("Фамилия", Model.Fam, new { placeholder = "Введите фамилию" })
+                        <span asp-validation-for="Fam" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Name">Имя:</label>
+                        @Html.TextBox("Имя", Model.Name, new { placeholder = "Введите имя" })
+                        <span asp-validation-for="Name" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Otch">Отчество:</label>
+                        @Html.TextBox("Отчество", Model.Otch, new { placeholder = "Введите отчество" })
+                        <span asp-validation-for="Otch" />
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="form-group">
+                                <label asp-for="BirthDate">Дата рождения:</label>
+                                <input asp-for="BirthDate" />
+                                <span asp-validation-for="BirthDate" />
+                            </div>
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="form-group">
+                        <label asp-for="email">Email:</label>
+                        @Html.TextBox("Email", Model.email, new { placeholder = "Введите адрес почты" })
+                        <span asp-validation-for="email" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="phone">Телефон:</label>
+                        @Html.TextBox("Телефон", Model.phone, new { placeholder = "Введите номер (формат: 9 999-999-9999)" })
+                        <span asp-validation-for="phone" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Password">Пароль:</label>
+                        @Html.Password("Пароль", Model.Password, new { placeholder = "Введите пароль" })
+                        <span asp-validation-for="Password" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tabs-2">
+            <p>Роли...</p>
+        </div>
+    </div>

@@ -1,0 +1,156 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+@font-face {
+    font-family: Roboto-Black; 
+    src: url('/fonts/Roboto-Black.woff') format('woff'), url('/fonts/Roboto-Black.ttf') format('truetype'), url('/fonts/Roboto-Black.woff2') format('woff2');
+}
+@font-face {
+    font-family: Roboto-Bold;
+    src: url('/fonts/Roboto-Bold.woff') format('woff'), url('/fonts/Roboto-Bold.ttf') format('truetype'), url('/fonts/Roboto-Bold.woff2') format('woff2');
+}
+@font-face {
+    font-family: Roboto-Light;
+    src: url('/fonts/Roboto-Light.woff') format('woff'), url('/fonts/Roboto-Light.ttf') format('truetype'), url('/fonts/Roboto-Light.woff2') format('woff2');
+}
+@font-face {
+    font-family: Roboto-Medium;
+    src: url('/fonts/Roboto-Medium.woff') format('woff'), url('/fonts/Roboto-Medium.ttf') format('truetype'), url('/fonts/Roboto-Medium.woff2') format('woff2');
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url('/fonts/Roboto-Regular.woff') format('woff'), url('/fonts/Roboto-Regular.ttf') format('truetype'), url('/fonts/Roboto-Regular.woff2') format('woff2');
+}
+label {
+    display: block;
+    font-size: 12px;
+    text-align: left;
+    color: #cec8c8;
+    font-weight:bold;
+}
+input {
+    width: 350px;
+    height: 40px;
+    border: 2px solid #00c3ff;
+    border-radius: 5px;
+    padding-left: 25px;
+}
+h3 {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.w-350 {
+    width: 350px !important
+}
+.w-170 {
+    width: 170px !important
+}
+.btn {
+    height:40px;
+}
+.btn-blue {
+    background: #00BFFF;
+    border: solid 2px white;
+}
+.btn-blue:hover {
+    background: #0087b4;
+}
+.btn-green {
+    background: #86e781;
+    border: solid 2px white;
+}
+    .btn-green:hover {
+        background: #24791f;
+        color:white;
+    }
+[type="submit"], [type="button"] {
+}
+
+.form-group {
+    text-align: left;
+}
+.ui-tabs-tab {
+    background-color: #aa0a9d;
+    width: 250px;
+    text-align: center;
+}
+.ui-tabs-active {
+    background-color:#8e0084;
+}
+.logo {
+    font-family: Roboto-Black;
+    font-size: 30px;
+    color: white;
+}
+.container {
+    background-color:#700068;
+}
+.ui-widget-content {
+    background-color: #8e0084;
+    color: inherit;
+    border: none;
+}
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: white;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    font-family:Roboto-Regular;
+    background-color: #8e0084;
+    padding: 10px 20px;
+    color: white;
+}

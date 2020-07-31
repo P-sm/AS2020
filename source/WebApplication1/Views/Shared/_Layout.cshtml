@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DronTaxiWeb</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/checkboxStyler.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/lib/jquery-ui.css" />
+</head>
+<body>
+    <div class="row">
+        <div class="col-12 logo"><img src="~/icon-svg/logo2.svg" style="width:50px;" /> DRON TAXI</div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <ul>
+                <li>
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Профиль</a>
+                </li>
+                <li>
+                    <a class="nav-link" asp-area="" asp-controller="Account" asp-action="Logout">Выход</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-10">
+            <div class="container">
+                <main role="main" class="pb-3">
+                    @RenderBody()
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!--footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2020 - WebApplication1 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </!footer-->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-ui.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,13 @@
+﻿body {
+    width: 1435px;
+    height: 100%;
+    background-image: url(/img/flying-taxi.jpg);
+    background-size: auto;
+    background-blend-mode: multiply;
+    background-color: #8e008490;
+}
+.content {
+    margin-left: 7vw;
+    margin-top: 20vh;
+    width:350px;
+}
